@@ -6,13 +6,13 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common OS specific stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
-XDROID_BOOT := 1080
-XDROID_MAINTAINER := Cruzer
+# Inherit some common Stag os stuff.
+$(call inherit-product, vendor/stag/main.mk)
+BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xdroid_beryllium
+PRODUCT_NAME := stag_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
