@@ -6,13 +6,15 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Stag os stuff.
-$(call inherit-product, vendor/stag/main.mk)
-BUILD_TYPE := OFFICIAL
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+EVO_BUILD_TYPE := OFFICIAL
+#EVO_SIGNED := true
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := stag_beryllium
+PRODUCT_NAME := evolution_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
