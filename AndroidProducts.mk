@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_beryllium.mk
+    $(LOCAL_DIR)/stag_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_beryllium-user \
-    evolution_beryllium-userdebug \
-    evolution_beryllium-eng
+    stag_beryllium-user \
+    stag_beryllium-userdebug \
+    stag_beryllium-eng
