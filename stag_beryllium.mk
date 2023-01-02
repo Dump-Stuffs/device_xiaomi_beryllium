@@ -6,13 +6,13 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-DERP_BUILDTYPE := Official
+# Inherit some common Stag os stuff.
+$(call inherit-product, vendor/stag/main.mk)
+BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_beryllium
+PRODUCT_NAME := stag_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
